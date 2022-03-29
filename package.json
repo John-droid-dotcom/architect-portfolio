@@ -1,0 +1,23 @@
+{
+    "name": "architect-portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build-css": "tailwindcss build input.css -o dist/output.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/John-droid-dotcom/architect-portfolio.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/John-droid-dotcom/architect-portfolio/issues"
+    },
+    "homepage": "https://github.com/John-droid-dotcom/architect-portfolio#readme",
+    "dependencies": {
+        "tailwindcss": "^3.0.23"
+    }
+}

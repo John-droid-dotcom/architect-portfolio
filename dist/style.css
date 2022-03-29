@@ -1,0 +1,161 @@
+html {
+    font-family: "Barlow", sans-serif;
+    font-weight: lighter;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Architect;
+    src: url("./assets/fonts/Architectural.ttf");
+}
+
+@font-face {
+    font-family: Flux;
+    src: url("./assets/fonts/Flux.ttf");
+}
+
+@font-face {
+    font-family: ArchitectRegular;
+    src: url("./assets/fonts/ArchitectRegular.ttf");
+}
+
+.Title {
+    font-family: Architect;
+    font-size: 7rem;
+    color: #dc5d4a;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.Subtitle {
+    font-family: Architect;
+    font-size: 3rem;
+    color: #dc5d4a;
+}
+
+.About h2 {
+    font-weight: 400;
+    font-family: Flux;
+    font-size: 1.3rem;
+}
+
+.About-Component {
+    display: grid;
+    grid-template-columns: 25% auto;
+    width: 70%;
+    margin-block: 1rem;
+}
+
+
+/* .Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.Skill-Container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: auto;
+    row-gap: 4rem;
+    column-gap: 7rem;
+    margin-block: 1rem;
+}
+
+.Main>h2 {
+    /* font-family: Architect; */
+    font-weight: lighter;
+    font-family: flux;
+    font-size: 1.3rem;
+    /* color: #f8fafc; */
+}
+
+.Skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+
+/* .Soft-Skill {
+    display: grid;
+    grid-template-columns: max-content auto;
+} */
+
+@media (max-width: 1118px) {
+    .Sidebar {
+        width: 45%;
+    }
+    .About {
+        height: 90rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .Main {
+        height: 109.8rem;
+    }
+    .Skill-Container,
+    .Hobbies-Container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: auto;
+        row-gap: 4rem;
+        column-gap: 7rem;
+        margin-block: 1rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .Sidebar {
+        width: 50%;
+    }
+    .About {
+        padding-inline: 0rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Container {
+        display: flex;
+        flex-direction: column;
+    }
+    .Sidebar {
+        width: 100vw;
+    }
+    .Title {
+        font-size: 5rem;
+        height: 7rem;
+    }
+    .Main {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120rem;
+    }
+    .About {
+        height: 56rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .Title {
+        margin-top: 5rem;
+    }
+    .Main>h2 {
+        margin-left: 2.2rem;
+    }
+    .Skill-Container,
+    .Hobbies-Container {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: auto;
+        row-gap: 4rem;
+        column-gap: 7rem;
+        margin-block: 1rem;
+    }
+}

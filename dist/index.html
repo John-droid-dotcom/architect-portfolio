@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/images/dtlogo.png" />
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,14 +21,14 @@
 </head>
 
 <body>
-    <div class="Container flex w-screen h-full">
-        <div class="Sidebar w-4/12">
+    <div class="Container flex flex-col w-screen h-full md:flex-row">
+        <div class="Sidebar w-full md:w-4/12 lg:h-full">
             <div class="Profile bg-[#393941] p-8 flex justify-center">
                 <img src="./assets/images/avatar.jpg" alt="Profile Image of Daniel Teshome" class="rounded-full w-72" />
             </div>
-            <div class="About bg-[#DD5E4D] text-slate-50 text-xl py-24 flex flex-col items-center justify-center gap-4">
-                <h2 class="text-center">ABOUT ME</h2>
-                <div class="About-Component">
+            <div class="About bg-[#DD5E4D] text-slate-50 text-xl py-12 md:py-24 flex flex-col items-center justify-center gap-4 lg:h-full">
+                <h2 class="text-center text-[1.3rem] font-semibold font-['Flux']">ABOUT ME</h2>
+                <div class="About-Component grid grid-cols-[25%_auto] w-3/4 my-4">
                     <i class="bx bx-cake text-3xl"></i><span>3rd October, 1997</span>
 
                     <i class="bx bx-home text-3xl"></i
@@ -42,8 +43,8 @@
                     <p>Dilla University (Degree)</p>
                 </div>
             </div>
-            <h2 class="text-center">CONTACTS</h2>
-            <div class="About-Component">
+            <h2 class="text-center text-[1.3rem] font-semibold font-['Flux']">CONTACTS</h2>
+            <div class="About-Component grid grid-cols-[25%_auto] w-3/4 my-4">
                 <i class="bx bx-phone text-3xl"></i><span>+251934030377</span>
 
                 <i class="bx bx-envelope text-3xl"></i
@@ -54,8 +55,8 @@
 
             <i class="bx bxl-whatsapp text-3xl"></i><span>+251934030377</span>
             </div>
-            <h2 class="text-center">LINKS</h2>
-            <div class="About-Component">
+            <h2 class="text-center text-[1.3rem] font-semibold font-['Flux']">LINKS</h2>
+            <div class="About-Component grid grid-cols-[25%_auto] w-3/4 my-4">
                 <i class="bx bxl-facebook-circle text-3xl"></i
             ><a href="https://www.facebook.com/profile.php?id=100004745539405"
               >Daniel Teshome</a
@@ -82,15 +83,24 @@
         </div>
       </div>
       <div
-        class="Main bg-[#28292B] w-screen flex flex-col items-center txt-[#A6ADBA]"
+        class="Main bg-[#28292B] w-screen flex flex-col items-center text-[#A6ADBA] py-16"
       >
-        <h1 class="Title text-center h-36">Daniel Teshome</h1>
-        <p class="Subtitle text-center">ARCHITECT</p>
-        <h2 class="ml-24 my-7 self-start text-[#DD5E4D] text-3xl"
+        <h1
+          class="Title text-center my-4 text-6xl md:h-36 md:text-8xl text-[#dc5d4a] font-['Architect']"
+          >Daniel Teshome</h1
+        >
+        <p
+          class="Subtitle text-center text-[#dc5d4a] text-3xl md:text-5xl font-['Architect']"
+          >ARCHITECT</p
+        >
+        <h2
+          class="ml-8 md:ml-24 my-7 self-start text-[#DD5E4D] text-2xl font-light text-md font-['Flux']"
           >SOFTWARE SKILLS</h2
         >
-        <div class="Skill-Container">
-          <div class="Skills">
+        <div
+          class="Skill-Container grid grid-cols-[auto_auto] gap-y-6 gap-x-24 lg:grid-cols-[auto_auto_auto] md:w-4/5 md:gap-y-12 md:gap-x-24"
+        >
+          <div class="Skills flex flex-col items-center justify-center gap-2">
             <div class="radial-progress text-[#DD5E4D]" style="--value: 60"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +136,7 @@
                 </g></svg></div
             ><p class="text-center">3Ds Max</p>
           </div>
-          <div class="Skills"
+          <div class="Skills flex flex-col items-center justify-center gap-2"
             ><div class="radial-progress text-[#DD5E4D]" style="--value: 40"
               ><svg
                 enable-background="new 0 0 2075 2499.8"
@@ -142,7 +152,7 @@
             ><p class="text-center">MS Office</p></div
           >
 
-          <div class="Skills"
+          <div class="Skills flex flex-col items-center justify-center gap-2"
             ><div class="radial-progress text-[#DD5E4D]" style="--value: 75">
               <?xml version="1.0" encoding="UTF-8"?>
               <svg
@@ -177,7 +187,7 @@
             ><p class="text-center">Lumion</p></div
           >
 
-          <div class="Skills"
+          <div class="Skills flex flex-col items-center justify-center gap-2"
             ><div class="radial-progress text-[#DD5E4D]" style="--value: 70"
               ><span
                 class="icon-c7a09858c257de349e4d6df99a53bf84 text-slate-50 text-4xl"
@@ -185,7 +195,7 @@
             ><p class="text-center">Photoshop</p></div
           >
 
-          <div class="Skills"
+          <div class="Skills flex flex-col items-center justify-center gap-2"
             ><div class="radial-progress text-[#DD5E4D]" style="--value: 75"
               ><span
                 class="icon-e95299b072b3a5e6f1f3d4c725 text-slate-50 text-4xl"
@@ -193,14 +203,14 @@
             ><p class="text-center">Sketchup</p></div
           >
 
-          <div class="Skills"
+          <div class="Skills flex flex-col items-center justify-center gap-2"
             ><div class="radial-progress text-[#DD5E4D]" style="--value: 50"
               ><span
                 class="icon-ef6acece4a1476a12b85006d11a6eb text-slate-50 text-4xl"
               ></span></div
             ><p class="text-center">Autocad</p></div
           >
-          <div class="Skills"
+          <div class="Skills flex flex-col items-center justify-center gap-2"
             ><div class="radial-progress text-[#DD5E4D]" style="--value: 80"
               ><svg
                 fill="#F8FAFC"
@@ -214,7 +224,7 @@
                 /></svg></div
             ><p class="text-center">Revit</p></div
           >
-          <div class="Skills"
+          <div class="Skills flex flex-col items-center justify-center gap-2"
             ><div class="radial-progress text-[#DD5E4D]" style="--value: 40"
               ><img
                 src="./assets/images/twinmotion.svg"
@@ -223,93 +233,114 @@
             ><p class="text-center">Twinmotion</p></div
           >
         </div>
-        <h2 class="ml-24 my-7 self-start text-[#DD5E4D] text-3xl"
+        <h2
+          class="ml-8 md:ml-24 my-7 self-start text-[#DD5E4D] text-2xl font-light text-md font-['Flux']"
           >OTHER SKILLS</h2
         >
         <div
-          class="Soft-Skills-Container flex flex-col justify-center items-center gap-3"
+          class="Soft-Skills-Container flex flex-col justify-center items-start gap-3"
         >
-          <div class="Soft-Skill grid grid-cols-2">
+          <div
+            class="Soft-Skill flex flex-col justify-center items-start gap-4 w-4/5 md:grid md:grid-cols-[30%_auto] md:gap-x-24 md:w-4/5 lg:w-5/6 lg:grid-cols-[40%_auto] 2xl:gap-x-36"
+          >
             <p class="text-xl">Communication</p>
-            <div class="Progress flex justify-center items-center">
+            <div class="Progress flex justify-end items-center">
               <progress
-                class="progress progress-error bg-slate-200 w-96"
+                class="progress progress-error bg-slate-200 w-52 lg:w-96"
                 value="80"
                 max="100"
               ></progress>
             </div>
           </div>
-          <div class="Soft-Skill grid grid-cols-2">
+          <div
+            class="Soft-Skill flex flex-col justify-center items-start gap-4 w-4/5 md:grid md:grid-cols-[30%_auto] md:gap-x-24 md:w-4/5 lg:w-5/6 lg:grid-cols-[40%_auto] 2xl:gap-x-36"
+          >
             <p class="text-xl">Team Work</p>
-            <div class="Progress flex justify-center items-center">
+            <div class="Progress flex justify-end items-center">
               <progress
-                class="progress progress-error bg-slate-200 w-96"
+                class="progress progress-error bg-slate-200 w-52 lg:w-96"
                 value="85"
                 max="100"
               ></progress>
             </div>
           </div>
-          <div class="Soft-Skill grid grid-cols-2">
+          <div
+            class="Soft-Skill flex flex-col justify-center items-start gap-4 w-4/5 md:grid md:grid-cols-[30%_auto] md:gap-x-24 md:w-4/5 lg:w-5/6 lg:grid-cols-[40%_auto] 2xl:gap-x-36"
+          >
             <p class="text-xl">Responsibility</p>
-            <div class="Progress flex justify-center items-center">
+            <div class="Progress flex justify-end items-center">
               <progress
-                class="progress progress-error bg-slate-200 w-96"
+                class="progress progress-error bg-slate-200 w-52 lg:w-96"
                 value="90"
                 max="100"
               ></progress>
             </div>
           </div>
-          <div class="Soft-Skill grid grid-cols-2">
+          <div
+            class="Soft-Skill flex flex-col justify-center items-start gap-4 w-4/5 md:grid md:grid-cols-[30%_auto] md:gap-x-24 md:w-4/5 lg:w-5/6 lg:grid-cols-[40%_auto] 2xl:gap-x-56"
+          >
             <p class="text-xl">Puntuality</p>
-            <div class="Progress flex justify-center items-center">
+            <div class="Progress flex justify-end items-center">
               <progress
-                class="progress progress-error bg-slate-200 w-96"
+                class="progress progress-error bg-slate-200 w-52 lg:w-96"
                 value="90"
                 max="100"
               ></progress>
             </div>
           </div>
         </div>
-        <h2 class="ml-24 my-7 self-start text-[#DD5E4D] text-3xl">LANGUAGES</h2>
-        <div
-          class="Lang-Skills-Container flex flex-col justify-center items-center gap-3"
+        <h2
+          class="ml-8 md:ml-24 my-7 self-start text-[#DD5E4D] text-2xl font-light text-md font-['Flux']"
+          >LANGUAGES</h2
         >
-          <div class="Lang-Skill grid grid-cols-2">
+        <div
+          class="Lang-Skills-Container flex flex-col justify-center items-start gap-3"
+        >
+          <div
+            class="Lang-Skill flex flex-col justify-center items-start gap-4 w-4/5 md:grid md:grid-cols-[30%_auto] md:gap-x-24 md:w-4/5 lg:w-5/6 lg:grid-cols-[40%_auto] 2xl:gap-x-36"
+          >
             <p class="text-xl">Amharic</p>
-            <div class="Progress flex justify-center items-center">
+            <div class="Progress flex justify-end items-center">
               <progress
-                class="progress progress-error bg-slate-200 w-96"
+                class="progress progress-error bg-slate-200 w-52 lg:w-96"
                 value="90"
                 max="100"
               ></progress>
             </div>
           </div>
-          <div class="Lang-Skill grid grid-cols-2">
+          <div
+            class="Lang-Skill flex flex-col justify-center items-start gap-4 w-4/5 md:grid md:grid-cols-[30%_auto] md:gap-x-24 md:w-4/5 lg:w-5/6 lg:grid-cols-[40%_auto] 2xl:gap-x-36"
+          >
             <p class="text-xl">Afaan Oromoo</p>
-            <div class="Progress flex justify-center items-center">
+            <div class="Progress flex justify-end items-center">
               <progress
-                class="progress progress-error bg-slate-200 w-96"
+                class="progress progress-error bg-slate-200 w-52 lg:w-96"
                 value="90"
                 max="100"
               ></progress>
             </div>
           </div>
-          <div class="Lang-Skill grid grid-cols-2">
+          <div
+            class="Lang-Skill flex flex-col justify-center items-start gap-4 w-4/5 md:grid md:grid-cols-[30%_auto] md:gap-x-24 md:w-4/5 lg:w-5/6 lg:grid-cols-[40%_auto] 2xl:gap-x-36"
+          >
             <p class="text-xl">English</p>
-            <div class="Progress flex justify-center items-center">
+            <div class="Progress flex justify-end items-center">
               <progress
-                class="progress progress-error bg-slate-200 w-96"
+                class="progress progress-error bg-slate-200 w-52 lg:w-96"
                 value="85"
                 max="100"
               ></progress>
             </div>
           </div>
         </div>
-        <h2 class="ml-24 my-7 self-start text-[#DD5E4D] text-3xl"
+        <h2
+          class="ml-8 md:ml-24 my-7 self-start text-[#DD5E4D] text-2xl font-light text-md font-['Flux']"
           >Interests/Hobbies</h2
         >
         <div class="Interests flex flex-col justify-center items-center gap-3">
-          <div class="Hobbies-Container flex gap-12">
+          <div
+            class="Hobbies-Container grid grid-cols-[auto_auto] gap-x-14 gap-y-8 md:flex md:gap-12"
+          >
             <i class="uil uil-book-open text-6xl"></i>
                 <i class="uil uil-clapper-board text-6xl"></i>
                 <i class="uil uil-music text-6xl"></i>
